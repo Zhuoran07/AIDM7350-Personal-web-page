@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zhuoran's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('images/image2.jpg');
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar" style="background-color: #ffe4e1 !important;">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Zhuoran</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="#area" class="w3-bar-item w3-button"><i class="fa fa-user"></i> AREA</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  <a href="#area" onclick="w3_close()" class="w3-bar-item w3-button">AREA</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">ようこそ、卓然の世界へ！</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">ようこそ、卓然の世界へ！</span><br>
+    <span class="w3-large">Welcome to my homepage, I hope the information here can help you get to know me better.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">START HERE ！</a></p>
+  </div> 
+</header>
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center w3-large">An ISTJ with a lot of creative ideas and a severe ACGN addict!</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <img src="images/image4.png">
+      <p class="w3-large">MBTI</p>
+      <p>Atypical ISTJ, I can switch to a masked E person in large occasions! I don’t like to rush deadlines, and finishing 24 hours ahead of schedule is my comfort zone.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images/image5.png">
+      <p class="w3-large">ANIMATE</p>
+      <p>A hardcore animation enthusiast with a particular fondness for children-oriented battle shounen series. Primarily watches Japanese 2D animations, while also occasionally dabbling in Chinese and Western 3D animated productions.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images/image6.jfif">
+      <p class="w3-large">COMIC</p>
+      <p>Compared to animation, my love for comics has only increased. However, the themes of comics are more realistic and adult-oriented than those of animation, such as mystery, BL, workplace, campus, etc., which are all my favorite areas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images/image7.jfif">
+      <p class="w3-large">GAME</p>
+      <p>The games I played mainly focused on buyout reasoning games (such as Danganronpa) and long-term operation games (such as Genshin Impact and Honkai Impact 3rd). The development games in 4399 games, as well as the child-oriented Little Flower Fairy, Obi Island, and Rock Kingdom were all masterpieces of my childhood.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container" style="padding:128px 16px; background-color: #ffe4e1;">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>理想の自分</h3>
+      <p>Now I am still on the road of pursuing my ideal self, <br> that through hard work I can become: brave, bright, outspoken, kind, friendly and full of positive hope.<br> So far, in order to become my ideal self, I have made a lot of efforts, and the following will introduce my skills and achievements.</p>
+      <p><a href="#work" class="w3-button w3-pink"><i class="fa fa-th"> </i> View My Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/image1.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="area">
+  <h3 class="w3-center">AREA</h3>
+  <p class="w3-center w3-large">The field I work hard and cultivate</p>
+  <div class="w3-row-padding " style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/image8.jfif"  style="width: 90%">
+        <div class="w3-container">
+          <h3>Computer Programming</h3>
+          <p class="w3-opacity">PYTHON</p>
+          <p>My undergraduate major is information management and information systems, and my graduate major is artificial intelligence and digital media. Therefore, I have sufficient experience in computer programming.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/image9.png"  style="width:100%">
+        <div class="w3-container">
+          <h3>Foreign language skills</h3>
+          <p class="w3-opacity">Japanese Language Proficiency Test</p>
+          <p>In addition to English, which has been studied and used since elementary school, other minority languages ​​such as Japanese and Korean are also being actively learned. Japanese has officially obtained the N3 certificate in 2024.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/image10.jpg"  style="width:75%">
+        <div class="w3-container">
+          <h3>Photography</h3>
+          <p class="w3-opacity">Flower Photography</p>
+          <p>I am keen on taking photos that are full of vitality. Plants, animals, dynamic rivers and other natural scenes are my shooting targets. Although my skills are not superb, I am very glad that I can capture those happy moments.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/image11.png" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Novel writing</h3>
+          <p class="w3-opacity">Both original and fan fiction are involved</p>
+          <p>The beginning of the novel writing is actually closely related to my immersion in acgn culture. I wanted to get a happier ending, which was the opportunity for me to pick up my pen and start writing. I have met many characters with distinct personalities, witnessed many ups and downs in the plot, and resonated with some magnificent emotions. In this process, I have learned a lot and gained a lot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container" style="padding:128px 16px; background-color: #ffe4e1;">
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center w3-large">これまでの努力と成果</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="images/image12.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/image13.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/image14.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/image15.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="images/image16.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/image17.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/image18.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/image19.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: #ffe4e1;">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>My Skills.</h3>
+      <p>Professionally, my technical skills are mainly concentrated in computer technology.<br> 
+        Because my undergraduate major is information management and information systems, <br>
+        I have very skilled data analysis skills.</p>
+      <p>Because I came to the School of Communication of Hong Kong Baptist University to study<br>
+         artificial intelligence and digital media, I learned to use AI to efficiently program and<br>
+        solve technical problems. Using AI does not mean relying on AI and becoming the master of artificial intelligence. <br>
+        This is the key to my understanding during my master's degree.
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"></i>Python Programming</p>
+      <div class="w3-white">
+        <div class="w3-container w3-pink w3-center" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide"></i>Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-pink w3-center" style="width:75%">75%</div>
+      </div>
+      <p class="w3-wide"></i>Data analysis</p>
+      <div class="w3-white">
+        <div class="w3-container w3-pink w3-center" style="width:95%">95%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT ME！</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"style="color: #FF69B4 !important"></i> Beijing & Shenzhen</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"style="color: #FF69B4 !important"></i> Phone: +86 13240377925</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"style="color: #FF69B4 !important"> </i> Email: hanxianyu07@126.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-pink" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background-color: #ffe4e1;">
+  <a href="#home" class="w3-button w3-pink"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
